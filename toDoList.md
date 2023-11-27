@@ -9,3 +9,14 @@ Index.css
 -every time a player chooses a square we need to check wheather it was already choosen
 -check after every player turn if they won the game
 -We should display text saying who was the winner or if it was draw
+
+[0,1,2] Rows
+[3,4,5]
+[6,7,8]
+
+[0,3,6] Columns
+[1,4,7]
+[2,5,8]
+
+[0,4,8]
+[6,4,2]
