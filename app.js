@@ -18,8 +18,10 @@ const squareClickListener = (event) => {
   if (square.innerText !== "") return;
   numberOfMoves++;
   if (currentPlayer === 0) {
+    square.style.color = "blue";
     square.innerText = "X";
   } else {
+    square.style.color = "red";
     square.innerText = "O";
   }
 

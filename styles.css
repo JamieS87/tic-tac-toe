@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
 .hidden {
   display: none;
 }
@@ -13,7 +18,7 @@ h1 {
 #container {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 60vh;
   margin: 0 auto;
 }
 
@@ -25,8 +30,8 @@ h1 {
 
 .square {
   border: 1px solid black;
-  width: 33%;
-  height: 210px;
+  width: 33.33%;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,17 +39,29 @@ h1 {
   font-family: sans-serif;
 }
 
+.square:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+}
+
+.square:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
 #player-scores {
   margin: 0 auto;
   width: 80%;
   display: flex;
-  justify-content: space-between;
 }
 
 .player-score-container {
   display: flex;
   width: 100%;
   flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 
 #player1-score,
@@ -61,4 +78,12 @@ h1 {
 #button-reset {
   display: block;
   margin: 10px auto;
+  appearance: none;
+  border: none;
+  padding: 12px;
+  background-color: lightgrey;
+}
+
+#winner-text {
+  text-align: center;
 }
