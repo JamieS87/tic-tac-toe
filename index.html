@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Noughts and Crosses</h1>
+    <section id="container">
+      <p id="player-turn">Player 1 Turn</p>
+      <div class="square">X</div>
+      <div class="square">0</div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <p id="winner-text" class="hidden">Player 1 wins!</p>
+    </section>
+    <section id="player-scores">
+      <div class="player-score-container">
+        <p>Player 1 Score:</p>
+        <div id="player1-score">0</div>
+      </div>
+      <div class="player-score-container">
+        <p>Player 2 Score:</p>
+        <div id="player2-score">0</div>
+      </div>
+    </section>
+    <button id="button-reset">Reset</button>
+  </body>
+</html>
